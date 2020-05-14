@@ -1,0 +1,1 @@
+antora generate antora-playbook-author-mode.yml
