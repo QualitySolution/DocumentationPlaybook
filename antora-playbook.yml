@@ -6,7 +6,7 @@ site:
 content:
   sources: 
   - url: git@github.com:QualitySolution/Workwear.git
-    branches: [release/2.4,release/2.5,master]
+    branches: [release/2.4,release/2.5,release/2.6]
     start_path: docs
 ui: 
   bundle:
