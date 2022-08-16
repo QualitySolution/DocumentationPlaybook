@@ -1,6 +1,6 @@
 site:
   title: Документация Quality Solution
-  url: http://doc.qsolution.ru
+  url: https://doc.qsolution.ru
   start_page: workwear::introduction.adoc
 
 content:
