@@ -8,6 +8,9 @@ content:
   - url: git@github.com:QualitySolution/Workwear.git
     branches: [release/2.5,release/2.6,release/2.7,release/2.8]
     start_path: docs
+  - url: git@github.com:QualitySolution/QSInside.git
+    branches: [master]
+    start_path: docs    
 ui: 
   bundle:
     url: https://gitlab.com/qualitysolution-public/antora-ui-default-russian/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
