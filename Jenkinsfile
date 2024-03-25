@@ -1,0 +1,20 @@
+node{
+    stage('Git') {
+      checkout([
+         $class: 'GitSCM',
+         branches: scm.branches,
+         doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
+         extensions: scm.extensions + [submodule(disableSubmodules: false, recursiveSubmodules: true)],
+         userRemoteConfigs: scm.userRemoteConfigs
+      ])
+    }
+    stage('Build') {
+      sh 'antora generate antora-playbook.yml'
+    }
+    if(env.BRANCH_NAME == 'master')
+    {
+		stage('Publish'){
+		    sh 'rsync -viza --checksum --delete build/site/ a218160_qso@a218160.ftp.mchost.ru:subdomains/doc/httpdocs'
+		}
+    }
+}
