@@ -1,10 +1,8 @@
-properties {
-  pipelineTriggers {
-    triggers {
-      upstream threshold: 'UNSTABLE', upstreamProjects: 'QS/QSInside/master,QS/Workwear/release%2F2.5,QS/Workwear/release%2F2.6,QS/Workwear/release%2F2.7,QS/Workwear/release%2F2.8'
-    }
-  }
-}
+properties {[
+  pipelineTriggers {[
+    upstream threshold: 'UNSTABLE', upstreamProjects: 'QS/QSInside/master,QS/Workwear/release%2F2.5,QS/Workwear/release%2F2.6,QS/Workwear/release%2F2.7,QS/Workwear/release%2F2.8'
+  ]}
+]}
 
 node{
   stage('Git') {
