@@ -18,7 +18,7 @@ node{
     ])
   }
   stage('Build') {
-    sh 'antora generate --fetch antora-playbook.yml'
+    sh 'antora generate --fetch --stacktrace antora-playbook.yml'
   }
   if(env.BRANCH_NAME == 'master')
   {

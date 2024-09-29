@@ -5,10 +5,10 @@ site:
 
 content:
   sources: 
-  - url: git@github.com:QualitySolution/Workwear.git
+  - url: https://github.com/QualitySolution/Workwear.git
     branches: [release/2.5,release/2.6,release/2.7,release/2.8]
     start_path: docs
-  - url: https://github.com/QualitySolution/QSInside
+  - url: https://github.com/QualitySolution/QSInside.git
     branches: [master]
     start_path: docs
 ui: 
