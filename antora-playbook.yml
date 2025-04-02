@@ -4,6 +4,7 @@ site:
   start_page: workwear::introduction.adoc
 
 content:
+  edit_url: ~
   sources: 
   - url: https://github.com/QualitySolution/Workwear.git
     branches: [release/2.5,release/2.6,release/2.7,release/2.8,master]
