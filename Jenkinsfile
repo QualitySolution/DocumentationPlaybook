@@ -17,6 +17,9 @@ node{
       userRemoteConfigs: scm.userRemoteConfigs
     ])
   }
+  stage('Dependencies') {
+    sh 'npm ci'
+  }
   stage('Build') {
     sh 'antora generate --fetch --stacktrace antora-playbook.yml'
   }
