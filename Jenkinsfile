@@ -27,7 +27,7 @@ node{
   if(env.BRANCH_NAME == 'master')
   {
     stage('Publish'){
-      sh 'rsync -viza --checksum --delete build/site/ a218160_qso@a218160.ftp.mchost.ru:subdomains/doc/httpdocs'
+      sh 'rsync -viza --checksum --delete build/site/ root@odysseus.srv.qsolution.ru:/var/www/doc'
     }
   }
 }
