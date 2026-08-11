@@ -17,6 +17,15 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
+        {{#with (resolvePage page.relativeSrcPath model=false)}}
+        {{#with ./assembler.pdf}}
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="{{{relativize ./file.pub.url}}}" download>Скачать PDF</a>
+          </span>
+        </div>
+        {{/with}}
+        {{/with}}
         <a class="navbar-item" style="background: #ff8700;" href="https://workwear.qsolution.ru/">Сайт программы</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" style="background: #ff8700;" href="#">О программе</a>

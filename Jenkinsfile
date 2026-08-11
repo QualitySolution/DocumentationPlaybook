@@ -22,7 +22,7 @@ node{
   }
   stage('Build') {
     sh 'rm -rf build'
-    sh 'antora generate --fetch --stacktrace antora-playbook.yml'
+    sh 'npx antora generate --fetch --stacktrace antora-playbook.yml'
   }
   if(env.BRANCH_NAME == 'master')
   {
